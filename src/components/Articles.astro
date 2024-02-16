@@ -1,0 +1,49 @@
+---
+
+import Card from '../components/Card.astro'
+import Image2 from '../images/img-2.jpg';
+import Image3 from '../images/img-3.jpg';
+import Image4 from '../images/img-4.jpg';
+
+---
+
+<section class="articles-section">
+    <h2>Latest Articles</h2>
+    <span class="line"></span>
+    <div class="cards">
+        <Card text='How to use mindfullness in your everyday life' img={Image2.src} />
+        <Card text='What are the best walking meditations' img={Image3.src} />
+        <Card text='How to deep into the mind of hope' img={Image4.src} />
+    </div>
+</section>
+
+
+
+
+<style>
+    .articles-section{
+        height: auto;
+        width: 100%;
+        padding: 5rem 0;
+        background-color: rgb(242, 244, 241);
+    }
+    h2{
+        font-weight: 400;
+        text-align: center;
+    }
+    .line{
+        display: block;
+        margin: 1rem auto 0;
+        width: 30px;
+        height: 3px;
+        background-color: rgba(62, 67, 61, 1);
+    }
+    .cards{
+        margin: 2rem auto 0;
+        width: 100%;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+        gap: 2rem;
+    }
+</style>

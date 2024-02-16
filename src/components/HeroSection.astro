@@ -1,0 +1,50 @@
+---
+
+---
+
+<section class="hero-section">
+    <div class="texts">
+        <h1>LOMBOK</h1>
+        <p>Holistic Health</p>
+        <span class="line"></span>
+    </div>
+</section>
+
+
+<style>
+    .hero-section{
+        background-image: url('../images/img-1.jpg');
+        background-position: right;
+        background-size: 200%;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .texts{
+        text-align: center;
+    }
+    h1{
+        font-size: 5rem;
+        letter-spacing: 10px;
+        font-weight: 500;
+    }
+    .texts p{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+    }
+
+    .line{
+        display: block;
+        margin: 1rem auto 0;
+        width: 30px;
+        height: 3px;
+        background-color: rgba(62, 67, 61, 1);
+    }
+   
+    @media (max-width: 600px){
+        h1{
+            font-size: 3rem;
+        }
+    }
+</style>
