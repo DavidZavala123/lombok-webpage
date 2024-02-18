@@ -1,0 +1,75 @@
+---
+
+---
+
+<section class="subscribe" id="subscribe">
+    <h2>Subscribe</h2>
+    <p>Sign-up to our newsletter</p>
+    <form action="#">
+        <input type="email" name="email" id="email" placeholder="Your email" />
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<style>
+    .subscribe {
+        width: 100%;
+        background-color: rgb(242, 244, 241);
+        padding: 3rem 1rem;
+    }
+    .subscribe,
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        gap: 0.5rem;
+    }
+    h2 {
+        font-weight: 400;
+        text-align: center;
+    }
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    input[type="email"] {
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1rem;
+        width: 300px;
+        color: rgba(62, 67, 61, 0.8);
+        font-size: 0.75rem;
+    }
+    input[type="email"]::placeholder {
+        color: rgba(62, 67, 61, 0.5);
+    }
+    button[type="submit"] {
+        border: 2px solid rgba(62, 67, 61, 1);
+        padding: 0.5rem 2rem;
+        width: 150px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+        form{
+            width: 100%;
+        }
+        input[type="email"] {
+            width: 100%;
+            max-width: 300px;
+    }
+        button[type="submit"] {
+            width: 100%;
+            max-width: 300px;
+        }
+        .subscribe {
+        padding: 3rem .5rem;
+    }
+    }
+</style>
